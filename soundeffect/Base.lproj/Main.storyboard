@@ -1,24 +1,209 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="soundeffect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDB-Q2-ysU">
+                                <rect key="frame" x="82" y="138" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="TIW-7R-hly"/>
+                                    <constraint firstAttribute="width" constant="100" id="cSK-QM-bU4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="20"/>
+                                <state key="normal" title="ニュッ1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lYk-y0-fvN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nQ-Yx-jXL">
+                                <rect key="frame" x="232" y="138" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="RT2-dI-Oai"/>
+                                    <constraint firstAttribute="height" constant="100" id="rL3-yB-XOc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="20"/>
+                                <state key="normal" title="ニュッ2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WdD-q9-rT0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13T-IE-1yV">
+                                <rect key="frame" x="82" y="268" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="KDM-24-A6b"/>
+                                    <constraint firstAttribute="width" constant="100" id="LMa-Xw-7Qb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="20"/>
+                                <state key="normal" title="ニュッ3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GRx-OG-dVV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cx-65-tQM">
+                                <rect key="frame" x="232" y="268" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="7GK-x8-LJ2"/>
+                                    <constraint firstAttribute="height" constant="100" id="HVe-SA-efY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="20"/>
+                                <state key="normal" title="ぷよん">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tsO-jb-js5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LiP-9v-eTa">
+                                <rect key="frame" x="82" y="398" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="tCA-im-LjX"/>
+                                    <constraint firstAttribute="width" constant="100" id="vj1-Ng-RmA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="20"/>
+                                <state key="normal" title="目キラーン">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SRc-dt-3HT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gnc-M2-Ce4">
+                                <rect key="frame" x="232" y="398" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="KVb-mH-gsq"/>
+                                    <constraint firstAttribute="height" constant="100" id="aFP-6A-rTh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="20"/>
+                                <state key="normal" title="シャキーン">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CFw-qn-RbV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8X-Iw-zfu">
+                                <rect key="frame" x="82" y="528" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ZDS-0C-oVF"/>
+                                    <constraint firstAttribute="height" constant="100" id="jR9-3I-5TB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="20"/>
+                                <state key="normal" title="きらきら">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="POs-KY-E3r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haA-Bv-LPc">
+                                <rect key="frame" x="232" y="528" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Zsl-K2-H9M"/>
+                                    <constraint firstAttribute="height" constant="100" id="aTt-Uf-sEG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="20"/>
+                                <state key="normal" title="切り替え">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iXr-yT-Dzo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymb-HX-tG4">
+                                <rect key="frame" x="82" y="658" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="BrV-vv-d0D"/>
+                                    <constraint firstAttribute="width" constant="100" id="FRN-l1-nN1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="20"/>
+                                <state key="normal" title="チリン">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y8F-ja-5XI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1w-9e-4Hv">
+                                <rect key="frame" x="232" y="658" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="40C-0c-ijL"/>
+                                    <constraint firstAttribute="width" constant="100" id="eY1-1w-nzH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="20"/>
+                                <state key="normal" title="ガーン">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LBh-O3-8VE"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3cx-65-tQM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="75" id="5gq-ev-9N1"/>
+                            <constraint firstItem="haA-Bv-LPc" firstAttribute="top" secondItem="Gnc-M2-Ce4" secondAttribute="bottom" constant="30" id="EzQ-db-PGr"/>
+                            <constraint firstItem="y1w-9e-4Hv" firstAttribute="top" secondItem="haA-Bv-LPc" secondAttribute="bottom" constant="30" id="GXy-eb-myp"/>
+                            <constraint firstItem="13T-IE-1yV" firstAttribute="top" secondItem="hDB-Q2-ysU" secondAttribute="bottom" constant="30" id="H1w-R7-If5"/>
+                            <constraint firstItem="0nQ-Yx-jXL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="75" id="HCo-9C-Wy4"/>
+                            <constraint firstItem="ymb-HX-tG4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-75" id="MpU-qc-GUZ"/>
+                            <constraint firstItem="13T-IE-1yV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-75" id="Qcz-TY-iyN"/>
+                            <constraint firstItem="LiP-9v-eTa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-75" id="TdH-Vq-vmM"/>
+                            <constraint firstItem="LiP-9v-eTa" firstAttribute="top" secondItem="13T-IE-1yV" secondAttribute="bottom" constant="30" id="YWI-If-jVb"/>
+                            <constraint firstItem="Gnc-M2-Ce4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aEx-P4-2li"/>
+                            <constraint firstItem="LiP-9v-eTa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ey6-cX-DJh"/>
+                            <constraint firstItem="x8X-Iw-zfu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-75" id="jGF-in-bpl"/>
+                            <constraint firstItem="Gnc-M2-Ce4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="75" id="kDj-Cp-Hzs"/>
+                            <constraint firstItem="Gnc-M2-Ce4" firstAttribute="top" secondItem="3cx-65-tQM" secondAttribute="bottom" constant="30" id="l78-QT-VdY"/>
+                            <constraint firstItem="haA-Bv-LPc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="75" id="m1r-Tz-pdC"/>
+                            <constraint firstItem="y1w-9e-4Hv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="75" id="ooD-zg-zfP"/>
+                            <constraint firstItem="3cx-65-tQM" firstAttribute="top" secondItem="0nQ-Yx-jXL" secondAttribute="bottom" constant="30" id="sKV-K0-nK2"/>
+                            <constraint firstItem="ymb-HX-tG4" firstAttribute="top" secondItem="x8X-Iw-zfu" secondAttribute="bottom" constant="30" id="sdH-FJ-s43"/>
+                            <constraint firstItem="x8X-Iw-zfu" firstAttribute="top" secondItem="LiP-9v-eTa" secondAttribute="bottom" constant="30" id="vfc-CB-Ys7"/>
+                            <constraint firstItem="hDB-Q2-ysU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-75" id="xmr-J6-fRv"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="95.652173913043484" y="93.75"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
